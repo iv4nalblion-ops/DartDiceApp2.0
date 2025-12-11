@@ -4,9 +4,19 @@ void main() {
   runApp(
     MaterialApp(
       home: Scaffold(
+        body: gradientContainer(), 
+      ),
+    ),
+  );
+}
 
-        backgroundColor: Colors.deepPurple,
-        body: Container(
+class gradientContainer extends StatelessWidget {
+@override
+Widget build(context) 
+
+  {
+
+    return Container(
           
           decoration: const BoxDecoration(
 
@@ -18,16 +28,23 @@ void main() {
 
 
               ],
+
+              begin: Alignment.topLeft,
+              end: Alignment.bottomRight,
             
             ),
           ),
 
 
           child: Center(
-          child: Text("Hello World !"),
+          child: Text("Hello World 2 !",style: TextStyle(
+                color: Colors.white,
+                fontSize: 28.0,
+              ),
+            ),
           ),
-        ),
-      ),
-    ),
-  );
+        ); 
+
+  }
+
 }
