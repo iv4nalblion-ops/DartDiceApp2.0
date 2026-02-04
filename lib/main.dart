@@ -1,4 +1,5 @@
 import 'package:flutter/material.dart';
+import 'package:first_app/style_text.dart';
 
 void main() {
   runApp(
@@ -37,11 +38,9 @@ Widget build(context)
 
 
           child: Center(
-          child: Text("Hello World 2 !",style: TextStyle(
-                color: Colors.white,
-                fontSize: 28.0,
-              ),
-            ),
+
+            child: StyleText(),
+          
           ),
         ); 
 
